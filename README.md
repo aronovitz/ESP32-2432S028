@@ -1,5 +1,5 @@
 # Intro
-ESPHome yaml file and related files used to make a mini Home Assistant dashboard using a ESP32-2432S028 device.
+ESPHome yaml file used to make a mini Home Assistant dashboard using a ESP32-2432S028 device.
 
 The inspiration for creating this device was that I was looking for a way to know if the space heater in my
 office, which I control via a physical button and automation in Home Assistant, was on or off. I wanted something
