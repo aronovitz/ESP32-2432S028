@@ -8,11 +8,11 @@ I ultimately decide to use a Cheap Yellow Display (CYD) and create a mini-dashbo
 space for a few additional functions.
 
 # Sources of information:
-I used Aaron's Make It Work [youtube video](https://www.youtube.com/watch?v=x5fd6wm8f14) and [corresponding yaml](https://github.com/makeitworktech/ESP32-CYD-ESPHome) files as a main source of information and the starting point for my ymal config file for my dashboard. Aaron's video is a must watch if you're new to creating ESP32 devices using a CYD device:
+I used Aaron's Make It Work [youtube video](https://www.youtube.com/watch?v=x5fd6wm8f14) and [corresponding yaml](https://github.com/makeitworktech/ESP32-CYD-ESPHome) files as a main source of information and the starting point for my dashboard config file. Aaron's video is a must watch if you're new to creating ESP32 devices using a CYD device:
 <br> - Aaron Stewart @makeitworktech
 <br> - GitHub: https://github.com/makeitworktech
 <br> - Youtube video: https://www.youtube.com/watch?v=x5fd6wm8f14
 
 I also leveraged Vaclav Chaloupka's youtube video: https://www.youtube.com/watch?v=8TuYq-6c5ok
 
-Finally, I used ChatGPT extensively to modify the code to meet my needs and desired functionality and debug errors.
+Finally, I used ChatGPT extensively to modify the code to meet my needs and desired functionality and to debug errors.
