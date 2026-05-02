@@ -12,7 +12,7 @@
 # ============================================================
 
 substitutions: 
-  font_direcotry: C:\esphome-display\fonts\
+  font_directory: fonts/
   width: 320
   height: 240
   device_name: esp32-office-dashboard
@@ -80,17 +80,17 @@ captive_portal:
 # Create a font to use, add and remove glyphs as needed.
 font:
   - file:
-      path: ${font_direcotry}Arimo-Regular.ttf # Path to main font file
+      path: ${font_directory}Arimo-Regular.ttf # Path to main font file
       type: local
     id: arimo_small
     size: 10
   - file:
-      path: ${font_direcotry}Arimo-Regular.ttf # Path to main font file
+      path: ${font_directory}Arimo-Regular.ttf # Path to main font file
       type: local
     id: arimo_large
     size: 20
   - file:
-      path: ${font_direcotry}materialdesignicons-webfont.ttf # Defining Material Design Icons as a font.
+      path: ${font_directory}materialdesignicons-webfont.ttf # Defining Material Design Icons as a font.
       type: local                                            # This allows them to be used as button icons. 
     id: mdi_icons 
     size: 38          # You can get these glyphs from the https://pictogrammers.com/library/mdi/
@@ -189,7 +189,7 @@ text_sensor:
 
   - platform: homeassistant
     id: webcam_ring_light
-    entity_id: switch.wiz_smart_plug
+    entity_id: switch.office_laptop_ring_light
     on_value:
       then:
         - lvgl.widget.update:
@@ -408,7 +408,7 @@ lvgl:
                         text_color: 0xFF7F00
                         align: CENTER
                     - label:
-                        text: "Heater"
+                        text: "Heater/Fan"
                         text_font: arimo_small
                         text_color: 0xFFFFFF
                         align: BOTTOM_MID
@@ -454,7 +454,7 @@ lvgl:
                       - homeassistant.action:
                           action: switch.toggle
                           data:
-                            entity_id: switch.wiz_smart_plug
+                            entity_id: switch.office_laptop_ring_light
                       - binary_sensor.template.publish:
                           id: button_2_pressed
                           state: ON
